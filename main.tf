@@ -18,7 +18,7 @@ resource "google_container_node_pool" "main" {
   }
 }
 module "gke_cluster" {
-  source         = "github.com/talweg/T7M7/tf-google-gke-cluster"
+  source         = "github.com/talweg/tf-google-gke-cluster"
   GOOGLE_REGION  = var.GOOGLE_REGION
   GOOGLE_PROJECT = var.GOOGLE_PROJECT
   GKE_NUM_NODES  = 2
